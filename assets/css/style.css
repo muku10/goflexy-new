@@ -3419,6 +3419,7 @@ li {
     margin-top: 4px;
     margin-bottom: 4px;
     font-size: 18px;
+    margin-inline-start: 1.25rem;
 }
 
 img {
@@ -6108,7 +6109,7 @@ figcaption {
     }
 
     .ticket-flex-main {
-        font-size: 30vw;
+        /* font-size: 30vw; */
     }
 
     .lightbox-circle {
