@@ -6518,8 +6518,8 @@ figcaption {
 }
 
 .logo-carousel-item img {
-  width: 100px;          /* set desired consistent width */
-  height: 100px;         /* set desired consistent height */
+  width: auto;          
+  height: 100px;         
   object-fit: contain;   /* keeps logo proportions inside the box */
 }
 .w-slide .paralax-image , .image-wrap.for-team img {
