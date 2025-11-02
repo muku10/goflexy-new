@@ -6522,3 +6522,6 @@ figcaption {
   height: 100px;         /* set desired consistent height */
   object-fit: contain;   /* keeps logo proportions inside the box */
 }
+.w-slide .paralax-image , .image-wrap.for-team img {
+  height: 100%; 
+}
