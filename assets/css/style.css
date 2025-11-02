@@ -6509,3 +6509,16 @@ figcaption {
 .w-webflow-badge{
     display: none !important;
 }
+.logo-carousel-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.logo-carousel-item img {
+  width: 100px;          /* set desired consistent width */
+  height: 100px;         /* set desired consistent height */
+  object-fit: contain;   /* keeps logo proportions inside the box */
+}
