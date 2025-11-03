@@ -89,23 +89,3 @@ document.addEventListener("DOMContentLoaded", function () {
     // Start autoplay
     startAutoPlay();
 });
-
-function equalizePricingHeights() {
-  const items = document.querySelectorAll('.collection-list.w-dyn-items .pricing-plan-justify');
-  if (!items.length) return;
-
-  // Reset heights first (important for responsiveness)
-  items.forEach(el => el.style.height = 'auto');
-
-  // Find the tallest height
-  const maxHeight = Math.max(...Array.from(items).map(el => el.offsetHeight));
-
-  // Apply equal height to all
-  items.forEach(el => el.style.height = `${maxHeight}px`);
-}
-
-// Run after full load and CMS render
-window.addEventListener('load', () => setTimeout(equalizePricingHeights, 300));
-
-// Recalculate on window resize
-window.addEventListener('resize', equalizePricingHeights);
