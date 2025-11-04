@@ -6561,3 +6561,25 @@ figcaption {
     margin-top: 0 !important;
   }
 }
+
+.policyBody {
+  h3:not(.main-title-page) {
+    margin-top: 3rem;
+    font-size: 2rem !important;
+  }
+  p,
+  ul,
+  li,
+  strong,
+  b,
+  a {
+    font-size: 20px;
+  }
+}
+
+.policyLink {
+  text-decoration: underline;
+  text-underline-offset: 0.15rem;
+  cursor: pointer;
+  text-transform: capitalize;
+}
