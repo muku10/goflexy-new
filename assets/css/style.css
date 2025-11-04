@@ -6512,3 +6512,52 @@ figcaption {
 .w-webflow-badge {
   display: none !important;
 }
+@media screen and (max-width: 1000px) {
+  .max-lg\:display-none {
+    display: none !important;
+    margin: 0 !important;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .lg\:display-none {
+    display: none !important;
+    margin: 0 !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .fun-facts {
+    place-self: center !important;
+    * {
+      align-items: center;
+      text-align: center;
+      justify-content: center;
+      place-content: center;
+      place-self: center !important;
+    }
+  }
+}
+.mobile-fun-facts-wrapper {
+  display: grid;
+  /* grid-template-columns: repeat(2, auto); */
+  text-align: center;
+  gap: 1rem;
+  > * {
+    margin-inline: 1rem;
+    &:empty {
+      display: none !important;
+    }
+  }
+  .fun-facts {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    width: 100%;
+    gap: 1rem;
+    /* grid-template-columns: repeat(2, 1fr); */
+    grid-area: auto !important;
+  }
+  .margin-60px {
+    margin-top: 0 !important;
+  }
+}
